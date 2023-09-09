@@ -5,7 +5,7 @@ class ApiController < ApplicationController
         track = params[:track]
         current_day = Date.today.strftime("%A")
         utc_time = Time.now.utc.strftime("%FT%T%Z")
-        github_file_url =
+        github_file_url = "https://github.com/G-vans/hng-stage-one/blob/main/app/controllers/api_controller.rb"
         github_repo_url = "https://github.com/G-vans/hng-stage-one"
 
         response_data = {
