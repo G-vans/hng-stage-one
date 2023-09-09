@@ -4,7 +4,7 @@ class ApiController < ApplicationController
         slack_name = params[:slack_name]
         track = params[:track]
         current_day = Date.today.strftime("%A")
-        utc_time = Time.now.utc.strftime("%FT%T%Z")
+        utc_time = Time.now.utc.strftime("%Y-%m-%dT%H:%M:%SZ")
         github_file_url = "https://github.com/G-vans/hng-stage-one/blob/main/app/controllers/api_controller.rb"
         github_repo_url = "https://github.com/G-vans/hng-stage-one"
 
